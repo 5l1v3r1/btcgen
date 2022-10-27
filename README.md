@@ -1,6 +1,5 @@
 # privkeygen
-This script generates a single Bitcoin address using the compressed public key format and prints it with its private key.
-
+Bitcoin private key generator
 
 python3 privkeygen.py
 
