@@ -1,5 +1,5 @@
 # privkeygen
 Bitcoin private key generator
 
-python3 privkeygen.py
+python privkeygen.py
 
