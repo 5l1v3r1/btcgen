@@ -1,5 +1,5 @@
 # privkeygen
-Bitcoin private key generator
+Bitcoin GUI private key generator
 
-python privkeygen.py
+python3 privkeygen.py
 
