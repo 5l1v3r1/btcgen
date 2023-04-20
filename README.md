@@ -1,4 +1,4 @@
 # privkeygen
-Bitcoin GUI private key generator
+Bitcoin private key generator
 
 
